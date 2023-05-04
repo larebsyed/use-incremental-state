@@ -1,6 +1,6 @@
 {
   "name": "use-incremental-state",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "The package provides hook to increment, decrement state",
   "main": "dist/index.js",
   "files": [
