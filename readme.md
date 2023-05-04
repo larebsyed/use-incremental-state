@@ -20,17 +20,17 @@ return (
 );
 }
 ````
-In the example above, the useIncrementalState hook is used to manage the count state variable, which is initialized to 0. The incrementCount and decrementCount functions returned by the hook can be used to increment or decrement the count variable, respectively.
+In the example above, the `useIncrementalState` hook is used to manage the count state variable, which is initialized to 0. The `incrementCount` and `decrementCount` functions returned by the hook can be used to increment or decrement the count variable, respectively.
 ## API
-The useIncrementalState hook returns an array with three elements:
+The `useIncrementalState` hook returns an array with three elements:
 
 ```` typescript
 const [state, increment, decrement] = useIncrementalState(initialValue, step = 1);
 ````
 
-• state: the current value of the incremental state variable. (default is 0)
-• increment: a function that increments the state variable by the specified step (default is 1).
-• decrement: a function that decrements the state variable by the specified step (default is 1).
+- state: the current value of the incremental state variable. (default is 0)
+- increment: a function that increments the state variable by the specified step (default is 1).
+- decrement: a function that decrements the state variable by the specified step (default is 1).
 
 ## Example
 Here's an example of using Use-Incremental-State to manage a progress bar:
@@ -56,4 +56,4 @@ function ProgressBar() {
 
 ````
 
-In the example above, the useIncrementalState hook is used to manage the progress state variable, which is initialized to 0 and incremented by 10 on each click of the "Next Step" button. The progress variable is used to set the width of a green div, which represents the progress bar.
+In the example above, the `useIncrementalState` hook is used to manage the progress state variable, which is initialized to 0 and incremented by 10 on each click of the "Next Step" button. The progress variable is used to set the width of a green div, which represents the progress bar.
