@@ -13,13 +13,13 @@ const [count, incrementCount, decrementCount] = useIncrementalState(0);
 
 return (
 <div>
-<p>Count: {count}</p>
-<button onClick={incrementCount}>Increment</button>
-<button onClick={decrementCount}>Decrement</button>
+  <p>Count: {count}</p>
+  <button onClick={incrementCount}>Increment</button>
+  <button onClick={decrementCount}>Decrement</button>
 </div>
 );
 }
-```
+````
 In the example above, the useIncrementalState hook is used to manage the count state variable, which is initialized to 0. The incrementCount and decrementCount functions returned by the hook can be used to increment or decrement the count variable, respectively.
 ## API
 The useIncrementalState hook returns an array with three elements:
@@ -29,6 +29,9 @@ const [state, increment, decrement] = useIncrementalState(initialValue, step = 1
 • decrement: a function that decrements the state variable by the specified step (default is 1).
 ## Example
 Here's an example of using Use-Incremental-State to manage a progress bar:
+
+```` typescript
+
 import { useIncrementalState } from 'use-incremental-state';
 
 function ProgressBar() {
@@ -45,4 +48,7 @@ function ProgressBar() {
     </div>
   );
 }
+
+````
+
 In the example above, the useIncrementalState hook is used to manage the progress state variable, which is initialized to 0 and incremented by 10 on each click of the "Next Step" button. The progress variable is used to set the width of a green div, which represents the progress bar.
