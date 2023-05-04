@@ -1,8 +1,8 @@
 # use-incremental-state
-Use-Incremental-State is an npm package that provides a React hook based on useState to allow for easy management of incremental state variables. This package is useful when you need to manage state variables that are incremented or decremented frequently, such as counters, progress bars, or pagination.
+use-incremental-state is an [npm package](https://www.npmjs.com/package/use-incremental-state) that provides a React hook based on useState to allow for easy management of incremental state variables. This package is useful when you need to manage state variables that are incremented or decremented frequently, such as counters, progress bars, or pagination.
 ## Installation
-To install use-incremental-state, run the following command:
-npm install larebsyed/use-incremental-state
+To install `use-incremental-state`, run the following command:
+> `npm install use-incremental-state`
 ## Usage
 To use `useIncrementalState` in your React project, import the useIncrementalState hook from the package:
 ```` typescript
