@@ -3,7 +3,12 @@ import { useState, useCallback } from "react";
 const useIncrementalState = (
   initialValue: number = 0,
   incrementStep: number = 1
-) : [number, () => void, () => void] => {
+): [
+  number,
+  () => void,
+  () => void,
+  React.Dispatch<React.SetStateAction<number>>
+] => {
   const [count, setCount] = useState(initialValue);
 
   const incrementCount = useCallback(
@@ -16,7 +21,7 @@ const useIncrementalState = (
     [incrementStep]
   );
 
-  return [count, incrementCount, decrementCount];
+  return [count, incrementCount, decrementCount, setCount];
 };
 
 export default useIncrementalState;
