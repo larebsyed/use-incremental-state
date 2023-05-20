@@ -17,7 +17,7 @@ const useIncrementalState = (
   );
 
   const decrementCount = useCallback(
-    () => setCount((count: number) => count + incrementStep),
+    () => setCount((count: number) => count - incrementStep),
     [incrementStep]
   );
 
