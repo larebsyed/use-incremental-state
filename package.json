@@ -1,6 +1,6 @@
 {
   "name": "use-incremental-state",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "The package provides hook to increment, decrement state",
   "main": "dist/index.js",
   "files": [
@@ -21,10 +21,10 @@
   "devDependencies": {
     "@types/react": "^18.2.4"
   },
-  "keyword": {
+  "keyword": [
     "react",
     "hooks",
     "state management",
     "incremental updates"
-  }
+  ]
 }
